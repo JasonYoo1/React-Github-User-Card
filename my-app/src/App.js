@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import FollowersApp from './Components/FollowersApp'
 
 class App extends React.Component{
   constructor(){
@@ -32,6 +33,8 @@ render(){
           Hello World
         </p>
         {this.state.users.name}
+        <h1>Followers:</h1>
+        <FollowersApp/>
       </header>
     </div>
   );
