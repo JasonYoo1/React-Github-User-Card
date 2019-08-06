@@ -19,7 +19,7 @@ class App extends React.Component{
     .then(res=>{
       return res.json()
     })
-    .then(info=> this.setState({ users:info }))
+    .then(res=> this.setState({ users:res },   console.log(res)))
     .catch(err => console.log(err))
   }
 
@@ -31,12 +31,11 @@ render(){
         <p>
           Hello World
         </p>
+        {this.state.users.name}
       </header>
     </div>
   );
-
 }
-
 }
 
 export default App;
