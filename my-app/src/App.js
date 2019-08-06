@@ -30,7 +30,7 @@ render(){
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hello World
+          User:
         </p>
         {this.state.users.name}
         <h1>Followers:</h1>

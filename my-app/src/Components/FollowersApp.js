@@ -1,4 +1,6 @@
 import React from 'react';
+import './FollowersStyle.scss';
+
 
 class FollowersApp extends React.Component{
   constructor(){
@@ -24,11 +26,12 @@ class FollowersApp extends React.Component{
 render(){
   return (
     <div className="App">
-          <div>
+          <div className="cards">
             {this.state.users.map(users=>{
-              return <p>{users.login}</p>
+              return <div>
+                <p>{users.login}</p>
+                </div>
             })}
-            Hello Worldsssss
         </div>
     </div>
   );
