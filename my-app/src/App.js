@@ -28,13 +28,12 @@ render(){
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           User:
         </p>
         {this.state.users.name}
         <h1>Followers:</h1>
-        <FollowersApp/>
+        <FollowersApp key={this.state.users.id}/>
       </header>
     </div>
   );

@@ -26,10 +26,10 @@ class FollowersApp extends React.Component{
 render(){
   return (
     <div className="App">
-          <div className="cards">
+          <div>
             {this.state.users.map(users=>{
               return <div>
-                <p>{users.login}</p>
+                <p className="cards">{users.login}<br></br>{users.id}</p>
                 </div>
             })}
         </div>
